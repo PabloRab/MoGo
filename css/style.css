@@ -5,17 +5,8 @@
     --hover-color:#F38181;
 }
 
-ul{list-style: none;}
-
-a{text-decoration: none;}
-
 body{
     margin: 0 auto;
-}
-
-.span-wrap{
-    display: flex;
-    justify-content: center;
 }
 
 .container{
@@ -23,6 +14,10 @@ body{
     margin: 0 auto;
     padding: 0 15px;
 }
+
+    a{
+        text-decoration: none;
+    }
 
     /* 
     font-family: 'Kaushan Script', cursive;
@@ -32,9 +27,16 @@ body{
         
 
      /* header */
-    .header{
-        padding-top: 17px;
-    }
+.header{
+    
+    padding-top: 17px;
+}
+
+.header-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
     
 .logo{
     color: var(--logo-color);
@@ -42,6 +44,12 @@ body{
     font-size: 30px;
     font-weight: 700;
 }  
+
+.navigation-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 55px;
+}
 
 .navigation-item{
     color: var(--logo-color);
@@ -56,6 +64,13 @@ body{
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 400;
+    border-bottom:  3px solid var(--hover-color);
+    padding-bottom: 10px;
+}
+
+.span-wrap{
+    display: flex;
+    justify-content: center;
 }
 
 .slogon{
@@ -63,12 +78,8 @@ body{
     font-family: Kaushan Script;
     font-size: 24px;
     font-weight: 400;
-    text-align: center;
     margin-bottom: 20px;
-    margin: 0 auto;
 }
-
-.span-wrap
 
 .title{
     color: var(--title-color);
@@ -83,15 +94,24 @@ body{
     width: 60px;
     height: 4px;
     background-color: var(--hover-color);
-    margin-bottom: 60px;
+    margin-bottom: 65px;
+    margin: 0 auto;
 }
 
-.work-title{
-    margin-bottom: 20px;
+.card-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.work-img{
-    margin-right: 20px;
+.card{
+
+}
+
+.card-img{
+    margin-right: 18px;
 }
 
 .card-title{
@@ -99,6 +119,7 @@ body{
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 400;
+    margin-bottom: 20px;
 }
 
 .card-text{
@@ -108,6 +129,10 @@ body{
     font-weight: 400;   
 }
 
+.our-team-list{
+    display: flex;
+}
+
 .our-team-text{
     color: var(--text-color);
     text-align: center;
@@ -115,6 +140,15 @@ body{
     font-size: 15px;
     font-weight: 400;
     margin-bottom: 27px;
+}
+
+.our-team-card{
+    margin: 30px;
+    width: 380px;
+}
+
+.our-team-img{
+    margin-bottom: 30px;
 }
 
 .work{
@@ -127,15 +161,19 @@ body{
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 11px;
+    text-align: center;
 }
 
 .our-team{
     padding-top: 100px;
     padding-bottom: 80px;
+    display: flex;
+    text-align: center;
 }
 
-.our-team-img{
-    margin-bottom: 30px;
+.profesion-wrap{
+    display: flex;
+    justify-content: center;
 }
 
 .profesion{
@@ -144,6 +182,7 @@ body{
     font-size: 15px;
     font-style: italic;
     font-weight: 300;   
+    text-align: center;
 }
 
 .foot-text{
@@ -167,7 +206,11 @@ body{
 }
 
 .footer-container{
-    border-top: 1px solid var(--text-color)
+    border-top: 1px solid var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    align-items: center;
 }
 
 .foot-btn{
@@ -179,5 +222,19 @@ body{
     padding: 11px 38px;
     border: none;
     text-transform: uppercase;
-    margin-left: -20;
+    margin-left: -20px;
+    margin: 10px 0px;
+}
+
+.email{
+    width: 230;
+    height: 39px;
+}
+
+.input{
+    padding: 8px 145px 8px 10px;
+}
+.subscribe-form{
+    display: flex;
+    align-items: center;
 }
